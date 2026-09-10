@@ -1,0 +1,98 @@
+
+body {
+    background-color: #c9ce3b;
+    color: #5d1170;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 40px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    color: #5d1170;
+}
+
+.main-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+nav {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 12px;
+}
+
+nav a {
+    display: block;
+    background-color: #ffffff;
+    color: #0000ff; 
+    text-decoration: underline;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-right: 15px solid #000000; 
+    font-family: sans-serif;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.content {
+    flex-grow: 1;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted #5d1170;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+
+form fieldset {
+    border: 1px solid #5d1170;
+    padding: 15px;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 12px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    color: #5d1170;
+    border: 1px solid #5d1170;
+    font-weight: bold;
+    cursor: pointer;
+}
