@@ -1,0 +1,208 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 650px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.descripcion {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #333;
+}
+
+
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label,
+.label-title {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-family: inherit;
+}
+
+
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3182ce;
+    outline: none;
+
+    box-shadow: 0 0 5px rgba(49, 130, 206, 0.4);
+}
+
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #888;
+}
+
+
+
+input:invalid:not(:placeholder-shown),
+select:invalid,
+textarea:invalid {
+    border-color: #e53e3e;
+}
+
+input:valid,
+select:valid {
+    border-color: #38a169;
+}
+
+
+
+.radio-label,
+.checkbox-group label {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-weight: normal !important;
+}
+
+.radio-label input,
+.checkbox-group input {
+    width: auto;
+}
+
+
+
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #3182ce;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563a8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-reset {
+    background-color: #777;
+}
+
+.btn-reset:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
