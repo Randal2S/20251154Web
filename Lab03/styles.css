@@ -1,0 +1,190 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+
+.hero-section {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #f1f6ff,
+        #ffffff
+    );
+}
+
+.hero-text {
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 450px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.section-title h2,
+.news-section h2 {
+    font-weight: bold;
+}
+
+
+.course-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+}
+
+.course-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.course-card h3 {
+    margin: 15px 0 10px;
+}
+
+.course-card p {
+    color: #666;
+    line-height: 1.5;
+
+    flex-grow: 1;
+}
+
+.course-icon {
+    font-size: 42px;
+}
+
+
+
+.news-section {
+    background-color: #f5f7fa;
+}
+
+
+
+@media (min-width: 576px) {
+
+    .hero-text h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .course-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .hero-section {
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        min-height: 600px;
+
+        padding: 80px 8%;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+
+    .course-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .course-grid {
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+}
