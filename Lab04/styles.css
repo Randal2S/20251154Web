@@ -1,0 +1,30 @@
+body {
+    background-color: #f5f7fa;
+}
+
+.card {
+    border: none;
+}
+
+.task-card {
+    height: 100%;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 30px;
+}
+
+footer {
+    margin-top: 50px;
+}
